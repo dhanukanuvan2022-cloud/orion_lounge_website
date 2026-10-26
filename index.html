@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Discover Orion Lounge & Bar in Negombo, Sri Lanka. Explore our BBQ, Japanese favourites, rice, seafood and desserts. Order through WhatsApp.">
+  <title>Orion Lounge & Bar | Negombo, Sri Lanka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Orion Lounge and Bar home">
+    <img src="assets/orion-logo-artwork.jpg" alt="Orion Lounge & Bar logo artwork">
+    <span><b>ORION</b><small>LOUNGE &amp; BAR · NEGOMBO</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav id="mainNav">
+    <a href="#about">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#location">Find Us</a>
+    <a class="nav-order" href="#menu">Order Food <span>↗</span></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div><div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span></span> NEGOMBO · SRI LANKA <span></span></p>
+    <h1>Good Food.<br><em>Good Mood.</em><br>Great Times.</h1>
+    <p class="hero-copy">A little indulgence, a lot of flavour. Discover grilled favourites, Japanese-inspired plates and memorable moments at Orion Lounge &amp; Bar.</p>
+    <div class="hero-actions"><a class="btn btn-gold" href="#menu">Explore the Menu <span>↓</span></a><a class="btn btn-outline" href="https://wa.me/94764167993" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
+    <div class="hero-meta"><span><i>✦</i> BBQ &amp; Japanese favourites</span><span><i>✦</i> Poruthota Road, Negombo</span></div>
+  </div>
+  <div class="hero-stamp"><span>ORION</span><small>LOUNGE<br>&amp; BAR</small><b>NEGOMBO</b></div>
+  <a class="scroll-note" href="#about">SCROLL TO DISCOVER <span>↓</span></a>
+</section>
+
+<section class="intro section" id="about">
+  <div class="intro-art"><img src="assets/gallery-15.jpg" alt="Orion Lounge & Bar sign on the venue wall" loading="lazy"><div class="image-caption">YOUR TABLE. YOUR MOMENT.</div></div>
+  <div class="intro-copy">
+    <p class="eyebrow">WELCOME TO ORION</p>
+    <h2>Flavour that brings<br><em>people together.</em></h2>
+    <p>From smoky BBQ and sizzling plates to Japanese-inspired favourites, Orion Lounge &amp; Bar brings food, drinks and a relaxed lounge atmosphere together in Negombo.</p>
+    <p>Come by for a meal, meet friends, or make an evening of it. We look forward to welcoming you.</p>
+    <div class="signature">Orion Lounge &amp; Bar <span>— Negombo, Sri Lanka</span></div>
+    <a class="text-link" href="#location">Find our location <span>↗</span></a>
+  </div>
+</section>
+
+<section class="menu-section section" id="menu">
+  <div class="section-head">
+    <div><p class="eyebrow">MADE TO BE SAVOURED</p><h2>Explore our <em>menu.</em></h2></div>
+    <p>Choose your favourites, add them to your order, then send the order to us on WhatsApp.</p>
+  </div>
+  <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+    <button class="tab active" data-category="all">All Favourites</button>
+    <button class="tab" data-category="bbq">BBQ &amp; Grill</button>
+    <button class="tab" data-category="japanese">Japanese</button>
+    <button class="tab" data-category="rice">Rice &amp; Curries</button>
+    <button class="tab" data-category="seafood">Seafood</button>
+    <button class="tab" data-category="dessert">Desserts</button>
+  </div>
+  <div class="menu-layout">
+    <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    <aside class="order-panel" id="orderPanel">
+      <div class="order-top"><span class="mini-icon">✦</span><div><p class="eyebrow">YOUR SELECTION</p><h3>Your order</h3></div><span class="cart-count" id="cartCount">0</span></div>
+      <div id="cartItems" class="cart-items"><p class="empty-cart">Your order is waiting for something delicious.</p></div>
+      <div class="cart-total"><span>Estimated subtotal</span><strong id="cartTotal">LKR 0</strong></div>
+      <p class="cart-note">A 10% service charge may apply to dine-in bills as shown on the supplied menu. Confirm your final total with the restaurant.</p>
+      <label class="field-label" for="customerName">Your name (optional)</label><input id="customerName" type="text" placeholder="Name">
+      <label class="field-label" for="orderNote">Special instructions (optional)</label><textarea id="orderNote" rows="2" placeholder="Spice level, allergies, pickup details..."></textarea>
+      <button class="btn btn-gold order-submit" id="sendOrder">Send order via WhatsApp ↗</button>
+      <p class="tiny-note">Your WhatsApp app will open with your selected items and details ready to send. The restaurant must confirm availability and delivery/pickup.</p>
+    </aside>
+  </div>
+  <div class="menu-footnote"><span>✦</span> Prices are shown in Sri Lankan Rupees (LKR), transcribed from the menu supplied by the customer. Items without a clearly printed price are marked “Ask for price”. Please confirm availability and current prices with the restaurant.</div>
+</section>
+
+<section class="specials section">
+  <div class="special-photo"><img src="assets/gallery-12.jpg" alt="Grilled meat and sides served at Orion Lounge & Bar" loading="lazy"></div>
+  <div class="special-copy"><p class="eyebrow">FROM THE GRILL</p><h2>Smoky, savoury<br><em>and made to share.</em></h2><p>Gather around the table with BBQ favourites and generous platters. Ask our team about today’s availability and any special requests.</p><a class="btn btn-outline" href="#menu">Choose your dishes ↗</a></div>
+</section>
+
+<section class="gallery-section section" id="gallery">
+  <div class="section-head"><div><p class="eyebrow">A TASTE OF ORION</p><h2>Moments &amp; <em>memories.</em></h2></div><p>Photography and menu artwork supplied in the Orion Lounge &amp; Bar PDF.</p></div>
+  <div class="gallery-grid">
+    <a href="assets/gallery-10.jpg" target="_blank" class="gallery-item tall"><img src="assets/gallery-10.jpg" alt="Food platter at Orion Lounge & Bar" loading="lazy"><span>Made with flavour</span></a>
+    <a href="assets/gallery-08.jpg" target="_blank" class="gallery-item"><img src="assets/gallery-08.jpg" alt="Colourful lounge drink" loading="lazy"><span>Pour a little colour</span></a>
+    <a href="assets/gallery-17.jpg" target="_blank" class="gallery-item"><img src="assets/gallery-17.jpg" alt="Sushi served by the Orion team" loading="lazy"><span>Japanese favourites</span></a>
+    <a href="assets/gallery-18.jpg" target="_blank" class="gallery-item"><img src="assets/gallery-18.jpg" alt="Hot rice dish served at Orion" loading="lazy"><span>Comfort on a plate</span></a>
+    <a href="assets/gallery-11.jpg" target="_blank" class="gallery-item"><img src="assets/gallery-11.jpg" alt="Restaurant food presentation" loading="lazy"><span>Made to be savoured</span></a>
+    <a href="assets/gallery-19.jpg" target="_blank" class="gallery-item"><img src="assets/gallery-19.jpg" alt="Bartender preparing a drink at Orion Lounge & Bar" loading="lazy"><span>Good times at Orion</span></a>
+  </div>
+</section>
+
+<section class="reviews-section section" id="reviews">
+  <div class="reviews-heading"><p class="eyebrow">KIND WORDS &amp; GOOD VIBES</p><h2>Our guests, <em>our story.</em></h2><p>See the latest public ratings and reviews before you visit.</p></div>
+  <div class="rating-card"><div class="rating-number">5.0<span>/5</span></div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>Public rating shown on an online restaurant listing. Ratings and review counts can change.</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Orion+Lounge+%26+Bar+98+Poruthota+Road+Negombo" target="_blank" rel="noopener">Read reviews on Google Maps ↗</a></div>
+  <div class="review-cards">
+    <article class="review-card"><div class="stars">★★★★★</div><p>“Very nice place with a perfect music playlist. A perfect spot to chill.”</p><small>Public visitor review · Restaurant Guru listing</small></article>
+    <article class="review-card"><div class="stars">★★★★★</div><p>“The staff are very welcoming.”</p><small>Public visitor review · Restaurant Guru listing</small></article>
+    <article class="review-card"><div class="stars">★★★★★</div><p>“Beautiful atmosphere, great music, and incredible vibes.”</p><small>Public visitor review · Restaurant Guru listing</small></article>
+  </div>
+  <p class="review-disclaimer">These short excerpts are from publicly displayed visitor reviews on a third-party listing, not a live Google review widget. Follow the Google Maps link for the current review feed.</p>
+</section>
+
+<section class="location-section section" id="location">
+  <div class="location-copy"><p class="eyebrow">COME FIND US</p><h2>Your next good time<br><em>starts here.</em></h2><p class="address">98 Poruthota Road,<br>Negombo 11500, Sri Lanka</p><p class="hours"><span>Listed hours</span><br>Hours may vary. Please call ahead to confirm today’s opening time.</p><div class="location-actions"><a class="btn btn-gold" href="https://maps.app.goo.gl/JKhMUwgT7RYd9Qar8" target="_blank" rel="noopener">Open Google Maps ↗</a><a class="btn btn-outline" href="tel:+94764167993">Call the restaurant</a></div></div>
+  <div class="map-frame"><iframe title="Map showing Orion Lounge & Bar, Negombo" src="https://maps.google.com/maps?q=Orion%20Lounge%20%26%20Bar%2C%2098%20Poruthota%20Road%2C%20Negombo%2011500%2C%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+</section>
+
+<section class="contact-strip"><div><p class="eyebrow">LET’S MAKE IT DELICIOUS</p><h2>Hungry? <em>Talk to us.</em></h2></div><a class="btn btn-gold" href="https://wa.me/94764167993" target="_blank" rel="noopener">WhatsApp +94 76 416 7993 ↗</a></section>
+</main>
+
+<footer class="footer"><a class="footer-brand" href="#home">ORION <span>LOUNGE &amp; BAR</span></a><p>Good Food · Good Mood · Great Times</p><div class="footer-links"><a href="#menu">Menu</a><a href="#location">Location</a><a href="https://www.facebook.com/profile.php?id=61570746397370" target="_blank" rel="noopener">Facebook ↗</a><a href="https://wa.me/94764167993" target="_blank" rel="noopener">WhatsApp ↗</a></div><small>© <span id="year"></span> Orion Lounge &amp; Bar · Negombo, Sri Lanka<br>Website concept created using customer-supplied menu and photography. Confirm details with the venue.</small></footer>
+<script src="script.js"></script>
+</body></html>
